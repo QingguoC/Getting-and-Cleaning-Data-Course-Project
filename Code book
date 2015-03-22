@@ -1,0 +1,31 @@
+###Variables for the original data
+
+features: "features.txt"
+activitylabel: "activity_labels.txt"
+xtrain: "x_train.txt"
+ytrain: "y_train.txt"
+subjecttrain: "subject_train.txt"
+xtest: "x_test.txt"
+ytest: "y_test.txt"
+subjecttest: "subject_test.txt"
+
+###
+train: full train dataset
+test: full test dataset
+total: combine train and test dataset
+
+###
+colnames: to name colname of total dataset
+
+
+
+###
+extract: boolean variable to tell any mean() or std() in the colnames and include first two columns
+
+finaldata: final dataset including activity descriptive variable and appopriate colnames
+
+colname: store column names for final dataset
+
+
+###
+tidydata:  from finaldata, the average of each variable for each activity and each subject
