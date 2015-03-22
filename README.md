@@ -17,3 +17,13 @@ Extracts only the measurements on the mean and standard deviation for each measu
 Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names. 
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+To finish the project, 
+1) load all the orignal dataset, and check dims of each variable and contents. 
+2) combine x(observation sets), y(activity sets)and subject(volunteers id) for train and test, and then combine train and test dataset
+3) extract "mean" and "std" by using grepl
+4) add descriptive names of activity by merge the combined dataset with features
+5) lowwercase colnames and remove "-" and "()"
+6) generate tidydata set with average of each variable for each activity and each subject by using aggregate function and group by list (activity, subject)
+7) write the tidydata into a txt file
+
